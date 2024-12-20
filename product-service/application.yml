@@ -22,6 +22,18 @@ spring:
     show-sql: true
     database-platform: org.hibernate.dialect.MySQLDialect
 
+axon:
+  eventhandling:
+    processors:
+      "*":
+        mode: tracking
+        source: eventStore
+        initial-segment-count: 1
+
+  eventstore:
+    jpa:
+      schema-generation:
+        enabled: true
 
 
 
