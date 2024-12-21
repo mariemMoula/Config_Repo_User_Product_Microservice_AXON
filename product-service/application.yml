@@ -24,11 +24,11 @@ spring:
 
 axon:
   eventhandling:
-    processors:
-      "*":
-        mode: tracking
-        source: eventStore
-        initial-segment-count: 1
+      processors:
+          default:
+              mode: tracking
+              source: eventStore
+              initial-segment-count: 1
 
   eventstore:
     jpa:
