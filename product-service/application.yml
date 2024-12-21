@@ -30,11 +30,6 @@ axon:
               source: eventStore
               initial-segment-count: 1
 
-  eventstore:
-    jpa:
-      schema-generation:
-        enabled: true
-
 
 
 management:
